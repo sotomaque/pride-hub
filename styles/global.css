@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-300;
+    @apply dark:bg-[#06202A];
+  }
+  .toggle-checkbox:checked {
+    @apply: right-0;
+    right: 0;
+  }
+  .toggle-checkbox:checked + .toggle-label {
+    @apply: bg-green-400;
+    background-color: #68d391;
+  }
+}
